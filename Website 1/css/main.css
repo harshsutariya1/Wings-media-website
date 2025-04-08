@@ -1,0 +1,7 @@
+/* Main CSS file that imports all other CSS files */
+@import url('variables.css');
+@import url('base.css');
+@import url('components.css');
+@import url('sections.css');
+@import url('animations.css');
+@import url('responsive.css');

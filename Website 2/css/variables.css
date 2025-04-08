@@ -1,0 +1,27 @@
+/* ===== Variables ===== */
+:root {
+    /* Colors - Updated to match WingsMedia branding */
+    --color-dark: #1E1E1E;      /* Primary Background: Charcoal Black */
+    --color-darker: #171717;     /* Slightly darker version for depth */
+    --color-dark-blue: #262626;  /* Darker shade for contrast */
+    --color-light: #F6F0EA;      /* Light Text: Soft Cream */
+    --color-gray: #D1C6BC;       /* Lighter gray that complements the cream */
+    --color-primary: #5C3D2E;    /* Headings/Borders: Warm Brown */
+    --color-secondary: #A46B45;  /* Accent Elements: Copper Gold */
+    --color-accent: #D79F83;     /* Secondary Accent: Metallic Rose */
+    
+    /* Fonts */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    
+    /* Sizes */
+    --header-height: 80px;
+    --container-width: 1200px;
+    
+    /* Effects - Updated to match new colors */
+    --glow-shadow: 0 0 15px rgba(215, 159, 131, 0.3);
+    --glass-background: rgba(30, 30, 30, 0.8);
+    --glass-border: 1px solid rgba(92, 61, 46, 0.2);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
