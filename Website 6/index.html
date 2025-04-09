@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WingsMedia | Premium Digital Agency</title>
+    <meta name="description"
+        content="WingsMedia is a creative digital agency specializing in social media marketing, graphic design, content creation, photography, and video production.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="libs/aos/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="loading">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="logo-wrapper">
+                <img src="assets/images/logo.png" alt="WingsMedia Logo" class="logo">
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="#hero">
+                        <img src="https://via.placeholder.com/150x40/ffffff/A46B45?text=WingsMedia"
+                            alt="WingsMedia Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#work" class="nav-link">Our Work</a></li>
+                        <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">About</a></li>
+                <li class="mobile-nav-item"><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li class="mobile-nav-item"><a href="#work" class="mobile-nav-link">Our Work</a></li>
+                <li class="mobile-nav-item"><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+                <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="mailto:hello@wingsmedia.com" class="mobile-contact">hello@wingsmedia.com</a>
+                <div class="mobile-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+
+                <!-- Video Background (initially hidden) -->
+                <video class="hero-video" autoplay muted loop playsinline id="heroVideo"
+                    style="display: none; opacity: 0;">
+                    <source src="assets/images/hero-video.mp4" type="video/mp4">
+                </video>
+
+                <!-- Animation Background (shown by default) -->
+                <div class="hero-animation" id="heroAnimation" style="display: block; opacity: 1;">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                    <div class="animated-shape shape-3"></div>
+                    <div class="animated-shape shape-4"></div>
+                    <div class="animated-shape shape-5"></div>
+                </div>
+            </div>
+
+            <div class="bg-toggle">
+                <button class="bg-toggle-btn" data-bg="video" aria-label="Show video background">
+                    <i class="fas fa-video"></i>
+                </button>
+                <button class="bg-toggle-btn active" data-bg="animation" aria-label="Show animation background">
+                    <i class="fas fa-paint-brush"></i>
+                </button>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                        We Create <br><span class="highlight">Digital Experiences</span> <br>That Matter
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+                        Strategic marketing solutions for brands that want to make a lasting impression.
+                    </p>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#work" class="btn btn-primary">View Our Work</a>
+                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-scroll" data-aos="fade-up" data-aos-delay="600">
+                    <div class="scroll-icon">
+                        <span class="scroll-dot"></span>
+                    </div>
+                    <span class="scroll-text">Scroll to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-content">
+                        <span class="section-tag" data-aos="fade-up">About Us</span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">We help brands <span
+                                class="highlight">soar above</span> the digital noise</h2>
+                        <p class="section-text" data-aos="fade-up" data-aos-delay="200">
+                            WingsMedia is a full-service creative agency that specializes in crafting impactful digital
+                            experiences. We blend strategic thinking with creative execution to help brands stand out in
+                            today's crowded digital landscape.
+                        </p>
+                        <p class="section-text" data-aos="fade-up" data-aos-delay="300">
+                            Founded in 2018, we've helped over 100 clients across various industries transform their
+                            digital presence and achieve remarkable business growth.
+                        </p>
+                        <div class="stats-grid" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-item">
+                                <span class="stat-number counter">100+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter">250+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter">15</span>
+                                <span class="stat-label">Team Members</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+                        <div class="image-wrapper">
+                            <img src="assets/images/about-image.jpg" alt="WingsMedia Team" class="about-img">
+                            <div class="image-shape"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values section-padding light-bg">
+            <div class="container">
+                <div class="values-heading text-center" data-aos="fade-up">
+                    <span class="section-tag">Our Values</span>
+                    <h2 class="section-title">What sets us <span class="highlight">apart</span></h2>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="value-title">Creative Excellence</h3>
+                        <p class="value-text">We push creative boundaries to deliver work that stands out and makes a
+                            lasting impression.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="value-title">Strategic Approach</h3>
+                        <p class="value-text">Every design and campaign begins with a solid strategy aligned with your
+                            business goals.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="value-title">Results-Driven</h3>
+                        <p class="value-text">We focus on creating work that not only looks good but also delivers
+                            measurable results.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="value-title">Client Partnership</h3>
+                        <p class="value-text">We build lasting relationships with our clients, acting as an extension of
+                            your team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section-padding" id="services">
+            <div class="container">
+                <div class="services-heading text-center" data-aos="fade-up">
+                    <span class="section-tag">Our Services</span>
+                    <h2 class="section-title">What we can do for <span class="highlight">your brand</span></h2>
+                    <p class="section-subtitle">We offer a comprehensive suite of creative services to elevate your
+                        brand's presence</p>
+                </div>
+                <div class="services-wrapper">
+                    <div class="services-tabs" data-aos="fade-up" data-aos-delay="100">
+                        <button class="tab-btn active" data-tab="tab-1">Social Media Marketing</button>
+                        <button class="tab-btn" data-tab="tab-2">Graphic Design</button>
+                        <button class="tab-btn" data-tab="tab-3">Content Creation</button>
+                        <button class="tab-btn" data-tab="tab-4">Photography</button>
+                        <button class="tab-btn" data-tab="tab-5">Video Production</button>
+                    </div>
+                    <div class="tab-content-wrapper" data-aos="fade-up" data-aos-delay="200">
+                        <div class="tab-content active" id="tab-1">
+                            <div class="tab-image">
+                                <img src="assets/images/service-social.jpg" alt="Social Media Marketing">
+                            </div>
+                            <div class="tab-info">
+                                <h3>Social Media Marketing</h3>
+                                <p>Our data-driven approach to social media helps brands connect with their audience and
+                                    drive meaningful engagement. We handle everything from strategy development to
+                                    content creation and campaign management.</p>
+                                <ul class="tab-features">
+                                    <li><i class="fas fa-check"></i> Strategic Campaign Planning</li>
+                                    <li><i class="fas fa-check"></i> Content Calendar Development</li>
+                                    <li><i class="fas fa-check"></i> Community Management</li>
+                                    <li><i class="fas fa-check"></i> Advertising & Paid Media</li>
+                                    <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-sm btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="tab-2">
+                            <div class="tab-image">
+                                <img src="assets/images/service-design.jpg" alt="Graphic Design">
+                            </div>
+                            <div class="tab-info">
+                                <h3>Graphic Design</h3>
+                                <p>Our design team creates visually striking assets that communicate your brand's story
+                                    and capture your audience's attention. From logos to complete brand identities, we
+                                    craft designs that stand out.</p>
+                                <ul class="tab-features">
+                                    <li><i class="fas fa-check"></i> Brand Identity Development</li>
+                                    <li><i class="fas fa-check"></i> Digital & Print Assets</li>
+                                    <li><i class="fas fa-check"></i> Social Media Graphics</li>
+                                    <li><i class="fas fa-check"></i> Marketing Materials</li>
+                                    <li><i class="fas fa-check"></i> UI/UX Design</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-sm btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <!-- Additional tab content sections would be here but abbreviated for brevity -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="work section-padding light-bg" id="work">
+            <div class="container">
+                <div class="work-heading text-center" data-aos="fade-up">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Our <span class="highlight">Featured Work</span></h2>
+                    <p class="section-subtitle">Explore our selected projects that showcase our creativity and expertise
+                    </p>
+                </div>
+                <div class="work-filter" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="content">Content</button>
+                    <button class="filter-btn" data-filter="video">Video</button>
+                </div>
+                <div class="work-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-item" data-category="social branding">
+                        <div class="work-img">
+                            <img src="assets/images/work-1.jpg" alt="Project 1">
+                            <div class="work-overlay">
+                                <div class="overlay-content">
+                                    <span class="work-category">Social Media Campaign</span>
+                                    <h3 class="work-title">NatureBlend Organic</h3>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="branding">
+                        <div class="work-img">
+                            <img src="assets/images/work-2.jpg" alt="Project 2">
+                            <div class="work-overlay">
+                                <div class="overlay-content">
+                                    <span class="work-category">Brand Identity</span>
+                                    <h3 class="work-title">Fusion Fitness</h3>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional work items would go here but abbreviated for brevity -->
+                </div>
+                <div class="work-more text-center" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contact" class="btn btn-primary">See More Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section-padding" id="testimonials">
+            <div class="container">
+                <div class="testimonials-heading text-center" data-aos="fade-up">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What our <span class="highlight">clients say</span></h2>
+                    <p class="section-subtitle">Discover why brands trust us to elevate their digital presence</p>
+                </div>
+
+                <div class="testimonial-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Testimonial Controls (Top) -->
+                    <div class="testimonial-controls">
+                        <div class="swiper-pagination testimonial-pagination"></div>
+                        <div class="testimonial-buttons">
+                            <button class="swiper-button-prev testimonial-prev" aria-label="Previous testimonial">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="swiper-button-next testimonial-next" aria-label="Next testimonial">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Slider -->
+                    <div class="swiper-container testimonial-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Testimonial 1 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        WingsMedia transformed our social strategy completely. Our engagement has
+                                        increased by 300% and sales directly from social platforms have doubled in just
+                                        three months. Their creative approach and data-driven insights exceeded our
+                                        expectations.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/women/42.jpg"
+                                                alt="Sarah Johnson">
+                                        </div>
+                                        <div class="author-info">
+                                            <h4>Sarah Johnson</h4>
+                                            <span>Marketing Director, FashionNova</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        The video production team at WingsMedia created our product launch video on a
+                                        tight deadline.
+                                        Their professionalism, creativity, and attention to detail resulted in a video
+                                        that helped us
+                                        secure major retail partnerships and increased our product visibility
+                                        significantly.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                                                alt="Michael Chen">
+                                        </div>
+                                        <div class="author-info">
+                                            <h4>Michael Chen</h4>
+                                            <span>Founder, TechGadget</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        Working with WingsMedia has been game-changing for our brand. Their strategic
+                                        approach to
+                                        content creation has established us as thought leaders in our industry. Our
+                                        audience engagement
+                                        metrics have tripled and our conversion rates have never been higher.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/women/54.jpg"
+                                                alt="Alexandra Patel">
+                                        </div>
+                                        <div class="author-info">
+                                            <h4>Alexandra Patel</h4>
+                                            <span>CEO, Wellness Collective</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        The branding work that WingsMedia did for our startup was exceptional. They
+                                        captured our vision
+                                        perfectly and translated it into a cohesive brand identity that resonates with
+                                        our target audience.
+                                        We've received countless compliments on our new look and feel.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/men/22.jpg"
+                                                alt="David Rodriguez">
+                                        </div>
+                                        <div class="author-info">
+                                            <h4>David Rodriguez</h4>
+                                            <span>Co-founder, Elevate Solutions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Logos -->
+                <div class="client-logos" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="logos-title">Trusted by innovative brands</h3>
+                    <div class="logos-grid">
+                        <div class="logo-item"><img
+                                src="https://via.placeholder.com/150x60/f8f9fa/6c757d?text=Client+Logo"
+                                alt="Client Logo"></div>
+                        <div class="logo-item"><img
+                                src="https://via.placeholder.com/150x60/f8f9fa/6c757d?text=Client+Logo"
+                                alt="Client Logo"></div>
+                        <div class="logo-item"><img
+                                src="https://via.placeholder.com/150x60/f8f9fa/6c757d?text=Client+Logo"
+                                alt="Client Logo"></div>
+                        <div class="logo-item"><img
+                                src="https://via.placeholder.com/150x60/f8f9fa/6c757d?text=Client+Logo"
+                                alt="Client Logo"></div>
+                        <div class="logo-item"><img
+                                src="https://via.placeholder.com/150x60/f8f9fa/6c757d?text=Client+Logo"
+                                alt="Client Logo"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding light-bg" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content" data-aos="fade-right">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Ready to <span class="highlight">work together</span>?</h2>
+                        <p class="section-text">
+                            We're excited to learn more about your project and how we can help your brand achieve its
+                            goals. Fill out the form and we'll get back to you shortly.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email Us</h4>
+                                    <a href="mailto:hello@wingsmedia.com">hello@wingsmedia.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Call Us</h4>
+                                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Visit Us</h4>
+                                    <p>123 Creative Blvd, Digital City, CA 90210</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="WingsMedia Logo">
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-info">
+                    <h3>WingsMedia</h3>
+                    <p>A creative digital agency helping brands soar above the digital noise. We specialize in social
+                        media marketing, graphic design, content creation, photography, and video production.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> hello@wingsmedia.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Creative Blvd, Digital City, CA 90210</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-sm btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> WingsMedia. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <!-- Modify the order to load essential scripts first -->
+    <script>
+        // Inline script as a failsafe
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.querySelector('.loader').classList.add('fade-out');
+                document.body.classList.remove('loading');
+            }, 1000);
+        });
+
+        // Force hide after 5 seconds no matter what
+        setTimeout(function () {
+            document.querySelector('.loader').style.display = 'none';
+            document.body.classList.remove('loading');
+        }, 5000);
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Add testimonial initialization script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Swiper for testimonials
+            if (typeof Swiper !== 'undefined') {
+                try {
+                    var testimonialSlider = new Swiper('.testimonial-slider', {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.testimonial-pagination',
+                            clickable: true
+                        },
+                        navigation: {
+                            nextEl: '.testimonial-next',
+                            prevEl: '.testimonial-prev',
+                        },
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 1
+                            },
+                            992: {
+                                slidesPerView: 2,
+                                spaceBetween: 30
+                            }
+                        }
+                    });
+                } catch (e) {
+                    console.error('Error initializing Swiper:', e);
+                }
+            }
+        });
+    </script>
+    <script src="assets/js/animations.js"></script>
+
+    <!-- Add background toggle script -->
+    <script>
+        // Background toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const heroVideo = document.getElementById('heroVideo');
+            const heroAnimation = document.getElementById('heroAnimation');
+            const bgToggleBtns = document.querySelectorAll('.bg-toggle-btn');
+
+            // Ensure video is paused initially since we're starting with animation
+            if (heroVideo && !heroVideo.paused) {
+                heroVideo.pause();
+            }
+
+            // Function to toggle background
+            function toggleBackground(type) {
+                // Hide both
+                heroVideo.style.opacity = '0';
+                heroAnimation.style.opacity = '0';
+
+                // Show selected
+                setTimeout(() => {
+                    if (type === 'video') {
+                        heroVideo.style.display = 'block';
+                        heroAnimation.style.display = 'none';
+                        heroVideo.style.opacity = '1';
+                        if (heroVideo.paused) heroVideo.play();
+                    } else {
+                        heroVideo.style.display = 'none';
+                        heroAnimation.style.display = 'block';
+                        heroAnimation.style.opacity = '1';
+                        if (!heroVideo.paused) heroVideo.pause();
+                    }
+                }, 300);
+
+                // Update active button
+                bgToggleBtns.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.bg === type);
+                });
+            }
+
+            // Click event for toggle buttons
+            bgToggleBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    toggleBackground(this.dataset.bg);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
